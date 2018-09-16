@@ -1,0 +1,397 @@
+/*遮罩层*/
+#mask{
+    background-color: black;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width:100%;
+    height:1070px;
+    display:none;                  /*改*/
+}
+/*魔方*/
+/*最外层box主要是来用定位*/
+.box{
+    position:fixed;
+    z-index:1000;
+    right: 40px;
+    top: 40%;
+    width:100px;
+    height:100px;
+}
+@keyframes rotate{
+    0%{transform: rotateY(0deg) rotateX(0deg)}
+    100%{transform: rotateY(365deg) rotateX(365deg)}
+}
+
+.box-3D{
+    width:100px;
+    height:100px;
+    animation:rotate 8s infinite;
+    transform-style:preserve-3d;
+    animation-timing-function:linear;
+	
+}
+.box-3D:hover{
+    animation-play-state:paused;
+}
+.box-3D:hover img{
+    opacity:1;
+}
+.box-3D>div{
+    position:absolute;
+}
+.box-3D img{
+    width:100px;
+    height:100px;
+	opacity:.6;
+}
+.in_front{transform:rotateY(0deg) translateZ(50px)}
+.in_back{transform:rotate(180deg) translateZ(-50px)}
+.in_left{transform:rotateY(90deg) translateZ(50px)}
+.in_right{transform:rotateY(-90deg) translateZ(50px)}
+.in_top{transform:rotateX(90deg) translateZ(50px)}
+.in_bottom{transform:rotateX(-90deg) translateZ(50px)}
+
+/*#main*/
+#main{
+    max-width: 1920px;
+    min-width: 1200px;
+    height: 1017px;
+    margin: 0 auto;
+    position: relative;
+    background:url("../img/main_bg0.jpg") no-repeat center 46.5px;
+    overflow: hidden;
+}
+/*背景视频*/
+.vidoclass{
+    width: 1921px;
+    height: 1017px;
+    position: absolute;
+    top: -9.5px;
+    left: 50%;
+    margin-left: -962px;
+}
+video{
+    width: 1920px;
+    height: 1081px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+}
+/*logo*/
+.logo{
+    position: absolute;
+    top: 89px;
+    left: 40px;
+}
+
+
+.contentCenter{
+    width:700px;
+    height: 1017px;
+    position:relative;
+    margin:0 auto;
+}
+.content{
+    width: 812px;
+    height: 216px;
+    background: url("../img/index_z1.png") no-repeat center center;
+    position: absolute;
+    top:325px;
+
+}
+.content span{
+    width:190px;
+    height:31px;
+    text-align: center;
+    line-height: 31px;
+    border:1px solid rgb(203,165,102);
+    color:rgb(203,165,102);
+    border-radius: 8px;
+    cursor:pointer;
+    position:absolute;
+    right:225px;
+    bottom:-15px;
+}
+.content span:hover{
+    background:rgb(203,165,102);
+    border:1px solid white;
+    color:white;
+}
+.content b{
+    letter-spacing: 33px;
+    margin-left: 26px;
+    font-size: 16px;
+}
+.content span:nth-child(1){
+    left:125px;
+}
+/*login弹跳层*/
+#login{
+    position:fixed;
+    z-index:50;
+    margin:auto;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    width:286px;
+    height:310px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,.8);
+    color:white;
+
+    display:none;                             /*改*/
+}
+/*x*/
+.f-close{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    z-index:10
+}
+/*图片*/
+#login .f-photo{
+    background-image:url("../img/T1el.png");
+    background-position:-201px -199px;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    transition: background-position .2s;
+	border-top-right-radius:8px;
+    z-index: 10;
+}
+#login .form-login{
+    width:226px;
+    height:295px;
+    padding:0 25px;
+    position: relative;
+}
+/*输入表单共有样式 */
+/*表单标题:登录龙魂时刻*/
+#login .f-title{
+    font: 18px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei";
+    font-weight: 500;
+    padding: 35px 0 22px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display:block;
+}
+/*输入表单错误提示*/
+#login .f-title>span{
+    font: 10px tahoma,arial,"Hiragino Sans GB","Microsoft Yahei";
+    margin: 2px 0 -6px;
+    padding-left:10px;
+    width: 213px;
+    color: #4D4D4D;
+    text-align: left;
+    display:block;
+
+
+    opacity: 1;
+    line-height: 26px;
+    background: #FDEEE9;
+    border: 1px solid #fadcd3;
+
+}
+
+.form-login>div{
+    position: relative;
+    padding: 0 0 15px;
+}
+/*表单头像*/
+.form-login>div>label{
+    width: 39px;
+    height: 40px;
+    display: inline-block;
+    background: #aaabab;
+    text-align: center;
+    line-height: 38px;
+}
+.form-login>div>label>i{
+    font-size: 20px;
+}
+/*表单输入*/
+.form-login>div>input{
+    width:165px;
+    height: 20px;
+    padding: 8px;
+    line-height: 20px;
+    color: #595959;
+    font-size: 12px;
+    outline: none;
+    position:absolute;
+    top:0
+}
+/*忘记密码*/
+.form-login>a{
+   float:right;
+    color: #fff;
+    line-height: 18px;
+    height: 18px;
+    font-size: 12px;
+}
+.form-login>a:hover{
+    text-decoration:underline;
+}
+/*登录*/
+.f-button{
+    text-align: center;
+    cursor: pointer;
+    width: 222px;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 36px;
+    height: 37px;
+    color: #fff;
+    font-weight: 400;
+    border: 0;
+    outline: 0;
+    background:#0AE;
+    margin: 27px 0 10px 0;
+    display: block;
+}
+.form-login>a:last-child{
+    color: #0AE
+}
+/*二维码面*/
+.twoCodeImg{
+    margin-left:40px;
+    text-align: center;
+}
+.twoCodeP{
+    text-align: center;
+    margin-top:20px;
+    font-size: 15px;
+}
+
+
+/*registe弹跳层*/
+#register{
+    position:fixed;
+    z-index:50;
+    margin:auto;
+    top:-50px;
+    right:0;
+    bottom:0;
+    left:0;
+    width: 555px;
+    height: 465px;
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: rgba(0,0,0,.8);
+    min-height: 100px;
+    box-sizing: border-box;
+    color:white;
+
+    display:none;                          /*改*/
+}
+/*x*/
+#register .f-close{
+    font-size: 30px;
+}
+/*表单第一行*/
+#form-register .txt{
+    padding: 10px;
+}
+#form-register .txt p{
+    font-size: 18px;
+}
+#form-register .txt p span a {
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+    right: -207px;
+    color:#0AE;
+}
+#form-register .txt p span a:hover{
+    text-decoration: underline;
+}
+/*表单行共有样式*/
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group > label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    color: #ffffff;
+    font-size: 14px;
+}
+.form-group > input {
+    padding: 10px 20px;
+    width: 235px;
+    margin-top: 8px;
+    border-radius: 2px;
+    border:0;
+    outline: none;
+}
+.form-group > span {
+    width: 270px;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+    /*display:none;*/
+}
+/*不同提示的背景色*/
+/*为空*/
+.msg-error {
+    background-color: #d00;
+}
+/*提示*/
+.msg-default {
+    background-color: #999;
+}
+/*通过*/
+.msg-success {
+    background-color: #0d0;
+}
+
+/*提交注册信息按钮*/
+#bt-register{
+    background:#0AE;
+    width: 276px;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#foot{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#topBar{
+    position:absolute;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

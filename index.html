@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>《龙魂时刻》官方网站-网易3D无锁定动作网游</title>
+	<!--图标-->
+	<link rel="stylesheet" type="text/css" href="css/lconFont/iconfont.css">
+	<link rel="stylesheet" href="css/00-common.css">
+	<link rel="stylesheet" href="css/01-homepage.css">
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/03-webPageLoa.js"></script>
+</head>
+<body>
+	<!-- 遮罩层-->
+	<div id="mask"></div>
+	<div id="mask_two"></div>
+	<div id="topBar"></div>
+	<!--图标-->
+	<div class="logo"></div>
+	<div id="main">
+		<!--头部 -->
+		<div id="head" class="clear">
+				<img class="title hide" src="img/00-head/slogan_f6a2399.png">
+				<ul class="clear hide">
+					<li>
+						<a href="##" class="nav nav3">
+							<i></i>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="login/index.html" class="nav nav1">
+							<i></i>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="##" class="clear" id="headEject">
+								<div class="triangle"></div>
+								<div class="circle"></div>
+								<div class="rotate"></div>					
+						</a>
+						<!--视频播放-->
+						<div class="video-pop pop">
+							<video src="video/8dafd.mp4" preload="none" controls="false" class="headVideoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow" id="headCloseWindow"></div>
+						</div>
+					</li>
+					<li>
+						<a href="##" class="nav nav2">
+							<i></i>
+							<i></i>
+						</a>
+					</li>
+					<li>
+						<a href="##" class="nav nav4">
+							<i></i>
+							<i></i>
+						</a>
+					</li>
+				</ul>
+		</div>
+		<!--01最新资讯 -->
+		<div id="message" class="clear  hide">
+			<!--图标-->
+			&nbsp;&nbsp;<img src="img/01-message/tt1_a4605c6.png">
+			<!--左边文字内容-->
+			<div class="clear written">
+				<!--nav-->
+				<ul class="clear  nav ">
+					<li class="defalutStyle">综合</li>
+					<li>新闻</li>
+					<li>公告</li>
+					<li>媒体</li>
+					<li><a href="javascript:;">+</a></li>
+				</ul>
+				<div class="hr"></div>
+				<!--置顶标题-->
+				<p class="firstTitle">
+					<span>推荐</span>
+					<i></i>  <!--三角形-->
+					<!--js动态生成 -->
+				</p>
+				<!--综合面板-->
+				<div class="comprehensive lineTitle">
+							<!--js动态生成 -->
+				</div>
+				<!--新闻-->
+				<div class="news lineTitle" style="display:none">
+							<!--js动态生成 -->
+				</div>
+				<!--公告-->
+				<div class="notice lineTitle" style="display:none" >
+					<!--js动态生成 -->
+				</div>
+				<!--媒体-->
+				<div class="media lineTitle" style="display:none">
+					<!--js动态生成 -->
+				</div>
+				<!--低层标题 -->
+				<div class="lastTitle">
+					<p>获奖公示：</p>
+					<ul class="roll">
+								<!--js动态生成 -->
+					</ul>
+				</div>
+			</div>
+
+			<!--右边轮播-->
+			<div class="carousel hide">
+				<!--后台加载轮播图片-->
+				<ul class="carouselPhoto"></ul>
+				<!--后台加载圆点-->
+				<ul class="carouselCircle"></ul>
+			</div>
+
+		</div>
+		<!--02游戏特色-->
+		<div id="item">
+			&nbsp;&nbsp;<img src="img/02-item/tt2_715ae94.png" class="hide">
+			<ul class="clear">
+				<li class="ts1 common clear hide">
+					<a href="##">
+						<img src="img/02-item/01_22fb95e.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/ts1.mp4" preload=none preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="ts2 common clear hide">
+					<a href="##">
+						<img src="img/02-item/02_47316ac.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/8dafd.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="ts3 common clear hide">
+					<div class="text"></div>
+					<a href="##">
+						<img src="img/02-item/03_26ad8bf.jpg" alt=""/>
+						<i></i>
+					</a>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/ts3.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="ts4 common clear hide">
+					<a href="##">
+						<img src="img/02-item/04_fb43580.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/ts4.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="ts5 common clear hide">
+					<a href="##" class="clear">
+						<img src="img/02-item/05_c248987.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/8dafd.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+
+				</li>
+				<li class="ts6 common hide">
+					<a href="##">
+						<img src="img/02-item/06_406fb53.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/ts6.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="ts7 common hide">
+					<a href="##">
+						<img src="img/02-item/07_d61ca41.jpg" alt=""/>
+						<i></i>
+					</a>
+					<div class="text"></div>
+					<!--视频播放-->
+					<div class="video-pop">
+						<video src="video/ts7.mp4" preload="none" controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<!--03角色介绍-->
+		<div id="role" class="clear">
+				<!--标题 -->
+					&nbsp;&nbsp;<img src="img/03-role/tt3_bd98c63.png" class="hide">
+				<!--图片 -->
+				<ul class="clear">
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+					<li><a href="##"></a></li>
+				</ul>
+		</div>
+		<!--04龙曦大陆-->
+		<div id="mainland"  class="clear">
+				<!--标题 -->
+					&nbsp;&nbsp;<img src="img/04-mainland/tt4_d25464d.png" class="hide">
+					<div class="first-block clear">
+						<ul class="hide">
+							<li>
+									<img src="img/04-mainland/pl1_3e59138.png">
+							</li>
+							<li>
+									索尔达克镇
+							</li>
+						</ul>
+					</div>
+					<div class="second-block clear">
+						<ul class="hide">
+							<li>
+									<img src="img/04-mainland/pl2_04a66b8.png">
+							</li>
+							<li>
+									沙海之星
+							</li>
+						</ul>
+					</div>
+					<div class="thrid-block clear">
+					<ul class="hide">
+							<li>
+									<img src="img/04-mainland/pl3_c2d63e3.png">
+							</li>
+							<li>
+									凛东哨岗
+							</li>
+						</ul>
+					</div>
+					<div class="fourth-block clear">
+					<ul class="hide">
+							<li>
+									<img src="img/04-mainland/pl4_1508fef.png">
+							</li>
+							<li>
+									星灯岬
+							</li>
+						</ul>
+					</div>	
+		</div>
+		<!--05视听中心-->
+		<div id="seeinghearing">
+			<!--标题 -->
+			&nbsp;&nbsp;<img src="img/05-seeinghearing/tt5_41c1ac8.png" class="hide"/>
+			<!--音乐播放-->
+			<div id="music">
+				<!--js动态生成-->
+			</div>
+			<!--视频播放-->
+			<div class="video">
+				<ul class="vc">
+					<li class="common">
+						<a href="##">
+							<img src="img/05-seeinghearing/gh_b9b1978.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》公会战视频</h3>
+								<p>40人大型团战，和兄弟恣意战场</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/ts1.mp4" preload="none" controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+					<li class="common">
+						<a href="##">
+							<img src="img/05-seeinghearing/sz_71d83a9.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》时装视频</h3>
+								<p>这么美的小姐姐，你不想抱走吗？</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/ts3.mp4" preload=none controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+					<li class="common">
+						<a href="##">
+							<img src="img/05-seeinghearing/cj_c0bc043.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》场景展示视频</h3>
+								<p>感受龙曦大陆奇幻之美</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/ts4.mp4" preload=none controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+					<li class="common">
+						<a href="">
+							<img src="img/05-seeinghearing/fb_ef7e5e1.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》副本战斗视频</h3>
+								<p>极限操作，挑战智能精英BOSS</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/ts6.mp4" preload=none controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+					<li class="common">
+						<a href="##">
+							<img src="img/05-seeinghearing/sjg_fe9702a.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》世界观视频</h3>
+								<p>业火即将席卷世界，新的传说刚刚开始</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/ts7.mp4" preload=none controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+					<li class="common">
+						<a href="##">
+							<img src="img/05-seeinghearing/zd_9f25ae1.jpg" alt=""/>
+							<i></i>
+							<div class="dec">
+								<h3>《龙魂时刻》主角战斗视频</h3>
+								<p>反职业化设定，挑战动作极限</p>
+							</div>
+						</a>
+						<div class="video-pop">
+							<video src="video/6.mp4" preload=none controls="false" class="videoEject">
+								你的浏览器不支持video标签，请更换浏览器观看
+							</video>
+							<div class="closeWindow"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--服务条约-->
+			<div class="link">
+				<a href="##">《玩家守则》</a>
+				<a href="##">《用户使用许可协议》</a>
+				<a href="##">《服务条款》</a>
+			</div>
+		</div>
+	</div>
+	<!--尾部 -->
+	<div id="foot"></div>
+	<!-- 03角色介绍，图片+视频弹层-->
+	<div id="elasticLayer">
+		<!--第一层：小图片弹层-->
+		<div id="photoPop">
+			<span class="close"></span>
+			<a href="##" class="arrowLeft"></a>
+			<a href="##" class="arrowRight"></a>
+			<ul>
+				<li>
+					<a href="##"  class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role1_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="##" class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role2_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="##" class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role3_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="##" class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role4_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="##" class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role5_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+				<li>
+					<a href="##" class="scale"></a>
+					<a href="##">
+						<img src="img/03-role/role6_small.jpg" alt=""/>
+						<i></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		<!--第二层：大图片弹层-->
+		<div class="bigPhotoPop">
+			<a href="" class="bigPhotoPopClose"></a>
+			<ul>
+				<li><img src="img/03-role/role1_big.jpg"/></li>
+				<li><img src="img/03-role/role2_big.jpg"/></li>
+				<li><img src="img/03-role/role3_big.jpg"/></li>
+				<li><img src="img/03-role/role4_big.jpg"/></li>
+				<li><img src="img/03-role/role5_big.jpg"/></li>
+				<li><img src="img/03-role/role6_big.jpg" /></li>
+			</ul>
+		</div>
+		<!--第二层：视频弹层-->
+		<div class="videoPop">
+			<ul>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role1.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role2.mp4" preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role3.mp4"  preload=none  controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role4.mp4"  preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role5.mp4"  preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+				<li class="common">
+					<div class="video-pop">
+						<video src="video/role6.mp4"  preload=none controls="false" class="videoEject">
+							你的浏览器不支持video标签，请更换浏览器观看
+						</video>
+						<div class="closeWindow"></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--04龙曦大陆 图片弹层-->
+	<div class="mainlandPop">
+		<ul>
+			<li><img src="img/04-mainland/pl1_1.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl1_2.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl1_3.jpg" alt=""/></li>
+		</ul>
+		<ul>
+			<li><img src="img/04-mainland/pl2_1.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl2_2.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl2_3.jpg" alt=""/></li>
+		</ul>
+		<ul>
+			<li><img src="img/04-mainland/pl3_1.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl3_2.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl3_3.jpg" alt=""/></li>
+		</ul>
+		<ul>
+			<li><img src="img/04-mainland/pl4_1.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl4_2.jpg" alt=""/></li>
+			<li><img src="img/04-mainland/pl4_3.jpg" alt=""/></li>
+		</ul>
+		<span class="mainClose close"></span>
+		<i class="mainArrowLeft arrowLeft"></i>
+		<i class="mainArrowRight arrowRight"></i>
+
+	</div>
+
+	<script src="js/01-homepage.js"></script>
+</body>
+</html>
